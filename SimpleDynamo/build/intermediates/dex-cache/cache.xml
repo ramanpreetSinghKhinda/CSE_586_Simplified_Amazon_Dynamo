@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/raman/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e4f1766ce7404a08f45d859fb9c226fc9e41a861">
+        <dex dex="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/pre-dexed/debug/junit-4.10_fb803001c6f32caec8bbaa550036133b5768200b.jar" />
+    </item>
+    <item
+        jar="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="f71a6822470c9eb659d4f4a6cb57b780b35f058b">
+        <dex dex="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-19.0.1_290153a91c13ba5a732bafe64058fc370c247ed6.jar" />
+    </item>
+    <item
+        jar="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="9605369ff79a558dec693a7635d8cae09901b364">
+        <dex dex="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/pre-dexed/debug/instant-run_089e75ae37abd0dbf9c7ddd96d43832930a22b65.jar" />
+    </item>
+    <item
+        jar="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="0b6518e8c56892f7b5ef11aaf753ee7b8edfc740">
+        <dex dex="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_067733b2eb459154ef72d6ecb1c59a3418cb7f65.jar" />
+    </item>
+    <item
+        jar="/Users/raman/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="587da9a481ffd341d2fa091704489b89845ddacd">
+        <dex dex="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/pre-dexed/debug/support-v4-19.0.1_23b66dea4d2c07fdd4f53a3602000ec625018aaa.jar" />
+    </item>
+    <item
+        jar="/Users/raman/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="c9ad4a0850ab676c5c64461a05ca524cdfff59f1">
+        <dex dex="/Users/raman/Documents/SUNY_BUFFALO/Android/DS/PA4/SimpleDynamo/app/build/intermediates/pre-dexed/debug/json-simple-1.1.1_657a3969993e288860287db99bf35cbcdbc46887.jar" />
+    </item>
+
+</items>
