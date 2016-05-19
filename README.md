@@ -18,3 +18,10 @@ This assignment is about implementing a simplified version of Dynamo. There are 
 3. Failure Handling
 
 	> Implemented [**Quorum**](https://en.wikipedia.org/wiki/Quorum_(distributed_computing)) based replication technique that provide partition/failure tolerance and enforce consistent operation in a distributed system
+
+
+References
+---------------
+Here are two references for the Dynamo design:
+	 1. [Lecture slides](http://www.cse.buffalo.edu/~stevko/courses/cse486/spring16/lectures/26-dynamo.pdf)
+	 2. [Dynamo paper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
