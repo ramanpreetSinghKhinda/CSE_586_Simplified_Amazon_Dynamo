@@ -9,7 +9,7 @@ Implement a Dynamo styled key-value storage with **simultaneous availability and
 
 References
 ---------------
-Here are two references for the Dynamo design:</br>
+Here are two references for the Dynamo design: -</br>
 1. [Lecture slides](http://www.cse.buffalo.edu/~stevko/courses/cse486/spring16/lectures/26-dynamo.pdf)</br>
 2. [Dynamo paper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 
@@ -30,7 +30,7 @@ This project implements a [**Content Provider**](https://developer.android.com/g
 >  11. Unlike Dynamo, there are two things that we do not need to implement: - </br>
 >   a) **Virtual nodes** - This implementation uses physical nodes rather than virtual nodes, i.e., all partitions are static and fixed</br>
 >   b) **Hinted handoff** - This project do not implement hinted handoff. This means that when there is a failure, it is **OK to replicate on only two alive nodes**
->  11. We have fixed the ports & sockets.</br>
+>  11. We have fixed the ports & sockets: -</br>
 	a) Our app opens one server socket that listens on **Port 10000**</br>
 	b) We use [**run_avd.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) and [**set_redir.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/set_redir.py) scripts to set up the testing environment </br>
 	c) The grading will use 5 AVDs. The redirection ports are **11108, 11112, 11116, 11120, and 11124**
