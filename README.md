@@ -34,3 +34,18 @@ This project implements a [**Content Provider**](https://developer.android.com/g
 	a) Our app opens one server socket that listens on **Port 10000**</br>
 	b) We use [**run_avd.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) and [**set_redir.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/set_redir.py) scripts to set up the testing environment </br>
 	c) The grading will use 5 AVDs. The redirection ports are **11108, 11112, 11116, 11120, and 11124**
+
+
+Amazon Dynamo design guidelines
+-------------------------------------------------
+This project implements Simplified version of Amazon Dynamo based on below design guidelines: - 
+
+**1. Membership**
+> a) Just as the original Dynamo, every node can know every other node. This means that each node knows all other nodes in the system and also knows exactly which partition belongs to which node
+	
+> b) Any node can forward a request to the correct node without using a ring-based routing.
+
+**2. Request routing**
+> a) Unlike Chord, each Dynamo node knows all other nodes in the system and also knows exactly which partition belongs to which node.
+
+> b) Under no failures, a request for a key is directly forwarded to the coordinator (i.e., the successor of the key), and the coordinator should be in charge of serving read/write operations.
