@@ -22,7 +22,7 @@ This assignment is about implementing a simplified version of Dynamo. There are 
 
 References
 ---------------
-Here are two references for the Dynamo design:
+Here are two references for the Dynamo design:</br>
 1. [Lecture slides](http://www.cse.buffalo.edu/~stevko/courses/cse486/spring16/lectures/26-dynamo.pdf)    2. [Dynamo paper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 
 
@@ -39,10 +39,10 @@ This project implements a [**Content Provider**](https://developer.android.com/g
 >  8.  **Replication should be done exactly the same way as Dynamo does**. In other words, a (key, value) pair should be replicated over three consecutive partitions, starting from the partition that the key belongs to
 >  9. All replicas should store the same value for each key. This is “per-key” consistency. There is no consistency guarantee we need to provide across keys. More formally, we only implement **per-key linearizability**
 >  10. Each content provider instance should have a node id derived from its emulator port. This node id should be obtained by applying the SHA1 hash function to the emulator port. For example, **the node id of the content provider instance running on emulator-5554 should be, node_id = genHash(“5554”)**. This is necessary to find the correct position of each node in the Dynamo ring
->  11. Unlike Dynamo, there are two things that we do not need to implement: - 
->   a) **Virtual nodes** - This implementation uses physical nodes rather than virtual nodes, i.e., all partitions are static and fixed 
+>  11. Unlike Dynamo, there are two things that we do not need to implement: - </br>
+>   a) **Virtual nodes** - This implementation uses physical nodes rather than virtual nodes, i.e., all partitions are static and fixed</br>
 >   b) **Hinted handoff** - This project do not implement hinted handoff. This means that when there is a failure, it is **OK to replicate on only two alive nodes**
 >  11. We have fixed the ports & sockets.
-	> -  Our app opens one server socket that listens on **Port 10000**
-	> - We use [**run_avd.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) and [**set_redir.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/set_redir.py) scripts to set up the testing environment
+	> -  Our app opens one server socket that listens on **Port 10000**</br>
+	> - We use [**run_avd.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) and [**set_redir.py**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/set_redir.py) scripts to set up the testing environment </br>
 	> - The grading will use 5 AVDs. The redirection ports are **11108, 11112, 11116, 11120, and 11124**
