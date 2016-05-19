@@ -6,18 +6,6 @@ Goal
 ------
 Implement a Dynamo styled key-value storage with **simultaneous availability and linearizability (or sometimes called strong consistency) guarantees**. The system should have the ability to successfully undergo **concurrent read and write operations** and should provide consistent results even under **node failures**
 
-Context & Problem Statement
--------------------------------------------
-This assignment is about implementing a simplified version of Dynamo. There are three main pieces that has been implemented:
-
-1. Partitioning 
-> - Implemented Virtual Ring based on [**CHORD Protocol**](https://en.wikipedia.org/wiki/Chord_(peer-to-peer)) to provide ID space partitioning/re-partitioning
-> - Used [**SHA-1**](https://en.wikipedia.org/wiki/SHA-1) for Consistent hashing and lexically arrange nodes in the virtual ring and find the location for a particular key to be stored
-
-2. Replication
-3. Failure Handling
-	> Implemented [**Quorum**](https://en.wikipedia.org/wiki/Quorum_(distributed_computing)) based replication technique that provide partition/failure tolerance and enforce consistent operation in a distributed system
-
 
 References
 ---------------
