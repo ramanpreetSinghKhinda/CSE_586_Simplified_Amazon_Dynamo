@@ -106,7 +106,7 @@ The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dy
 
 Credits
 ----------
-This project contains scripts and other related material that is developed by [**Networked Systems Research**](https://nsr.cse.buffalo.edu)
+This project contains scripts and other related material that is developed by [**Networked Systems Research Group**](https://nsr.cse.buffalo.edu)
 
 I acknowledge and grateful to [**Professor Steve ko**](https://nsr.cse.buffalo.edu/?page_id=272) and [**TA Kyungho Jeon**](http://www.cse.buffalo.edu/~kyunghoj/) for their continuous support throughout the course that helped me learn the skills of Large Scale Distributed Systems.
 
