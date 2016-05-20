@@ -52,13 +52,17 @@ This project implements Simplified version of Amazon Dynamo based on below desig
 
 **2. Quorum replication**
 > a) Implement [**Quorum**](https://en.wikipedia.org/wiki/Quorum_(distributed_computing)) based replication that provide **Linearizability**
-
 > b) Note that the **original design does not provide linearizability**. We have adapted our implementation
-
 > c) **The replication degree N is 3**. This means that given a key, the key’s coordinator as well as the 2 successor nodes in the Dynamo ring store the key
-
 > d) **Both the reader quorum size R and the writer quorum size W is 2**. It means that the coordinator for a get/put request **always contact other two nodes** and get a vote from each (i.e., an acknowledgement for a write, or a value for a read).
-
 > f) For write operations, all objects are **versioned** in order to distinguish stale copies from the most recent copy
-
 > g) For read operations, if the readers in the reader quorum have different versions of the same object, the coordinator **picks the most recent version** and returns it
+
+**3. Failure handling**
+> a) Handling failures is done very carefully because there can be many corner cases to consider and cover
+
+> d) We cannot rely on socket creation or connect status to determine if a node has failed. Due to the Android emulator networking setup, it is not safe to rely on socket creation or connect status to judge node failures
+
+> e) When a coordinator for a request fails and it does not respond to the request, **its successor can be contacted next for the request**
+
+ 
