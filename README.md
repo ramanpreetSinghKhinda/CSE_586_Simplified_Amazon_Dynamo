@@ -74,7 +74,7 @@ This project implements Simplified version of Amazon Dynamo based on below desig
 
 Testing
 -------
-The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/simpledynamo-grading.osx) test our implementation rigorously in 6 different phases. Each testing phase is quite intensive: -  
+The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/simpledynamo-grading.osx) test our implementation rigorously in 6 different phases. Each testing phase is quite intensive. Refer [**Project Specifications**](https://docs.google.com/document/d/1iHtWvSE2pul7_OhcUMkZ9EMGn1IFhhPwwmz00TDLjP8/edit) for details: -  
 **1. Testing basic ops**
 > a) This phase will test basic operations, i.e., insert, query, delete, @, and *. This will test if everything is correctly replicated. There is no concurrency in operations and there is no failure either
 
