@@ -38,7 +38,7 @@ This project implements a [**Content Provider**](https://developer.android.com/g
 
 Amazon Dynamo design guidelines
 -------------------------------------------------
-This project implements Simplified version of Amazon Dynamo based on below design guidelines: - 
+This project implements **simplified version of Amazon Dynamo** based on below design guidelines: - 
 
 **1. Membership**
 > a) Just as the original Dynamo, every node can know every other node. This means that each node knows all other nodes in the system and also knows exactly which partition belongs to which node
