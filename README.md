@@ -65,4 +65,37 @@ This project implements Simplified version of Amazon Dynamo based on below desig
 
 > e) When a coordinator for a request fails and it does not respond to the request, **its successor can be contacted next for the request**
 
- 
+
+
+
+Testing
+----------
+The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/simpledynamo-grading.osx) test our implementation rigorously in 6 different phases. Each testing phase is quite intensive: -  
+**1. Testing basic ops**
+> a) This phase will test basic operations, i.e., insert, query, delete, @, and *. This will test if everything is correctly replicated. There is no concurrency in operations and there is no failure either
+
+**2. Testing concurrent ops with different keys**
+> a) This phase will test if your implementation can handle concurrent operations under no failure
+
+> b) The tester will use independent (key, value) pairs inserted/queried concurrently on all the nodes
+
+**3. Testing concurrent ops with same keys**
+> a) This phase will test if your implementation can handle concurrent operations with same keys under no failure
+
+> b) The tester will use the same set of (key, value) pairs inserted/queried concurrently on all the nodes
+
+**4. Testing one failure**
+> a) This phase will test one failure with every operation
+
+> b) One node will crash before operations start. After all the operations are done, the node will recover
+
+> c) This will be repeated for each and every operation
+
+**5. Testing concurrent operations with one failure**
+> a) This phase will execute operations concurrently and crash one node in the middle of the execution. After some time, the failed node will also recover in the middle of the execution
+
+**6. Testing concurrent operations with one consistent failure**
+> a) This phase will crash one node at a time consistently, i.e., one node will crash then recover, and another node will crash and recover, etc.
+
+> b) There will be a brief period of time in between the crash-recover sequence
+
