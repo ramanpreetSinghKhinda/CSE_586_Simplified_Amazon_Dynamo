@@ -74,7 +74,7 @@ This project implements **simplified version of Amazon Dynamo** based on below d
 
 Testing
 -------
-The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/simpledynamo-grading.osx) test our implementation rigorously in 6 different phases. Each testing phase is quite intensive. Refer [**Project Specifications**](https://docs.google.com/document/d/1iHtWvSE2pul7_OhcUMkZ9EMGn1IFhhPwwmz00TDLjP8/edit) for details: -  
+The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) test our implementation rigorously in 6 different phases. Each testing phase is quite intensive. Refer [**Project Specifications**](https://docs.google.com/document/d/1iHtWvSE2pul7_OhcUMkZ9EMGn1IFhhPwwmz00TDLjP8/edit) for details: -  
 **1. Testing basic ops**
 > a) This phase will test basic operations, i.e., insert, query, delete, @, and *. This will test if everything is correctly replicated. There is no concurrency in operations and there is no failure either
 
@@ -104,7 +104,7 @@ The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dy
 > b) There will be a brief period of time in between the crash-recover sequence
 
 
-Running the Testing Program
+Running the Grader/Testing Program
 -----------------------------------------
 > 1. Load the Project in Android Studio and create the [**apk file**](https://developer.android.com/studio/run/index.html)
 > 2. Download  the [**Testing Program**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) for your platform 
