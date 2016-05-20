@@ -43,9 +43,17 @@ This project implements Simplified version of Amazon Dynamo based on below desig
 **1. Membership**
 > a) Just as the original Dynamo, every node can know every other node. This means that each node knows all other nodes in the system and also knows exactly which partition belongs to which node
 	
-> b) Any node can forward a request to the correct node without using a ring-based routing.
+> b) Any node can forward a request to the correct node without using a ring-based routing
 
 **2. Request routing**
-> a) Unlike Chord, each Dynamo node knows all other nodes in the system and also knows exactly which partition belongs to which node.
+> a) Unlike Chord, each Dynamo node knows all other nodes in the system and also knows exactly which partition belongs to which node
 
-> b) Under no failures, a request for a key is directly forwarded to the coordinator (i.e., the successor of the key), and the coordinator should be in charge of serving read/write operations.
+> b) Under no failures, a request for a key is directly forwarded to the coordinator (i.e., the successor of the key), and the coordinator should be in charge of serving read/write operations
+
+**2. Quorum replication**
+> a) Implement [**Quorum**](https://en.wikipedia.org/wiki/Quorum_(distributed_computing)) based replication that provide **Linearizability**
+> b) Note that the **original design does not provide linearizability**. We have adapted our implementation
+> c) **The replication degree N is 3**. This means that given a key, the key’s coordinator as well as the 2 successor nodes in the Dynamo ring store the key
+> d) **Both the reader quorum size R and the writer quorum size W is 2**. It means that the coordinator for a get/put request **always contact other two nodes** and get a vote from each (i.e., an acknowledgement for a write, or a value for a read).
+> f) For write operations, all objects are **versioned** in order to distinguish stale copies from the most recent copy
+> g) For read operations, if the readers in the reader quorum have different versions of the same object, the coordinator **picks the most recent version** and returns it
