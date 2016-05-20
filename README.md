@@ -66,8 +66,6 @@ This project implements Simplified version of Amazon Dynamo based on below desig
 > e) When a coordinator for a request fails and it does not respond to the request, **its successor can be contacted next for the request**
 
 
-
-
 Testing
 ----------
 The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/simpledynamo-grading.osx) test our implementation rigorously in 6 different phases. Each testing phase is quite intensive: -  
@@ -99,3 +97,21 @@ The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dy
 
 > b) There will be a brief period of time in between the crash-recover sequence
 
+
+Credits
+----------
+I acknowledge and grateful to [**Professor Steve ko**](https://nsr.cse.buffalo.edu/?page_id=272) and [**TA Kyungho Jeon**](http://www.cse.buffalo.edu/~kyunghoj/) for their continuous support throughout the course that helped me learn the skills of Large Scale Distributed Systems.
+
+This project contains scripts and other related material that is developed by [**Networked Systems Research **](https://nsr.cse.buffalo.edu)
+
+
+License
+----------
+Copyright {2016} 
+{Ramanpreet Singh Khinda rkhinda@buffalo.edu} 
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
