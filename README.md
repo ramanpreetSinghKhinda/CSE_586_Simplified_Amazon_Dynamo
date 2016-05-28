@@ -105,19 +105,19 @@ The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dy
 
 Running the Grader/Testing Program
 -----------------------------------------
-> 1. Load the Project in Android Studio and create the [**apk file**](https://developer.android.com/studio/run/index.html)
-> 2. Download  the [**Testing Program**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) for your platform 
+> 1. Load the Project in Android Studio and create the [**apk file**](https://developer.android.com/studio/run/index.html).
+> 2. Download  the [**Testing Program**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) for your platform .
 > 3. Before you run the program, please make sure that you are **running five AVDs**. The below command will do it: -
-	- **python [run_avd.py](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) 5**
+	- **python [run_avd.py](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) 5**.
 > 4. Also make sure that the **Emulator Networking** setup is done. The below command will do it: -
 	- **python [set_redir.py](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/set_redir.py) 10000**
 > 5.  Run the grader: -
 	- chmod +x ***simpledynamo-grading.osx***
     - ./simpledynamo-grading.osx ***apk file path***
-> 6. You can specify which testing phase you want to test by providing **‘-p’** or ‘--phase’ argument to the tester
-> 7. **Note:** If you run an individual phase with "-p", it will always be a fresh install. However if you run all phases (without "-p"), it will not always be a fresh install; the grader will do a fresh-install before phase 1, and do another fresh-install before phase 2. Afterwards, there will be no install. **This means that all data from previous phases will remain intact**
-> 8. **‘-h’** argument will show you what options are available
-> 9. The grader uses **multiple threads** to test your code and each thread will independently print out its own log messages. This means that an **error message might appear in the middle of the combined log messages from all threads, rather than at the end**
+> 6. You can specify which testing phase you want to test by providing **‘-p’** or ‘--phase’ argument to the tester.
+> 7. **Note:** If you run an individual phase with "-p", it will always be a fresh install. However if you run all phases (without "-p"), it will not always be a fresh install; the grader will do a fresh-install before phase 1, and do another fresh-install before phase 2. Afterwards, there will be no install. **This means that all data from previous phases will remain intact**.
+> 8. **‘-h’** argument will show you what options are available.
+> 9. The grader uses **multiple threads** to test your code and each thread will independently print out its own log messages. This means that an **error message might appear in the middle of the combined log messages from all threads, rather than at the end**.
 
 
 Credits
