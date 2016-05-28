@@ -106,9 +106,9 @@ The  [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dy
 Running the Grader/Testing Program
 -----------------------------------------
 > 1. Load the Project in Android Studio and create the [**apk file**](https://developer.android.com/studio/run/index.html).
-> 2. Download  the [**Testing Program**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) for your platform .
+> 2. Download  the [**Testing Program**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) for your platform.
 > 3. Before you run the program, please make sure that you are **running five AVDs**. The below command will do it: -
-	- **python [run_avd.py](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) 5**.
+	- **python [run_avd.py](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/run_avd.py) 5**
 > 4. Also make sure that the **Emulator Networking** setup is done. The below command will do it: -
 	- **python [set_redir.py](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/blob/master/Scripts/set_redir.py) 10000**
 > 5.  Run the grader: -
