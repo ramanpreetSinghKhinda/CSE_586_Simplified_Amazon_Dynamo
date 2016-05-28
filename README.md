@@ -21,10 +21,10 @@ This project implements a [**Content Provider**](https://developer.android.com/g
 >  2. There can be at most **1 node failure** at any given time and is emulated by force closing an app instance.
 >  3.  **All failures are temporary** and you can assume that a failed node will recover soon.
 >  4.  **When a node recovers, it should copy all the object writes it missed during the failure**. This is done by asking the right nodes and copy from them.
->  5. The content Provider should handle a **failure happening at the same time with read/write operations**.
+>  5. The content provider should handle a **failure happening at the same time with read/write operations**.
 >  6.  **Replication should be done exactly the same way as Dynamo does**. In other words, a < key, value > pair should be replicated over three consecutive partitions, starting from the partition that the key belongs to.
 >  7. All replicas should store the same value for each key. This is “per-key” consistency. There is no consistency guarantee we need to provide across keys. More formally, we only implement **per-key linearizability**
->  8. The content Provider also should support **concurrent read/write operations**.
+>  8. The content provider also should support **concurrent read/write operations**.
 >  9. Each content provider instance should have a node id derived from its emulator port. This node id should be obtained by applying the SHA1 hash function to the emulator port. For example, **the node id of the content provider instance running on emulator-5554 should be, node_id = genHash(“5554”)**. This is necessary to find the correct position of each node in the Dynamo ring
 >  10. There are always **5 nodes** in the system.
 >  11. Unlike Dynamo, there are two things that we do not need to implement: - </br>
