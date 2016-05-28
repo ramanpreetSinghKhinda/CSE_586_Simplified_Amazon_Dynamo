@@ -15,7 +15,7 @@ I have used below two references to design Dynamo: -</br>
 
 
 Writing the Content Provider
------------------------------------------
+----------------------------------------
 This project implements a [**Content Provider**](https://developer.android.com/guide/topics/providers/content-providers.html) that provide all storage functionalities. For example, it creates server and client threads, open sockets, and respond to incoming requests. There are few assumptions/restrictions for the [**Grader**](https://github.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/tree/master/Testing_Program) that test this application: -
 >  1. Any app (not just our app) should be able to access (read and write) our content provider.
 >  2. There can be at most **1 node failure** at any given time and is emulated by force closing an app instance.
